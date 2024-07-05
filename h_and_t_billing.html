@@ -1,0 +1,548 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module h_and_t_billing</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>h_and_t_billing</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/home/erpadmin/bench-migrate/apps/h_and_t_bill/h_and_t_bill/h_and_t_bill/doctype/h_and_t_billing/h_and_t_billing.py">/home/erpadmin/bench-migrate/apps/h_and_t_bill/h_and_t_bill/h_and_t_bill/doctype/h_and_t_billing/h_and_t_billing.py</a></font></td></tr></table>
+    <p><tt>#&nbsp;Copyright&nbsp;(c)&nbsp;2023,&nbsp;Abhishek&nbsp;and&nbsp;contributors<br>
+#&nbsp;For&nbsp;license&nbsp;information,&nbsp;please&nbsp;see&nbsp;license.txt</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="ast.html">ast</a><br>
+</td><td width="25%" valign=top><a href="frappe.html">frappe</a><br>
+</td><td width="25%" valign=top><a href="re.html">re</a><br>
+</td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="frappe.model.document.html#Document">frappe.model.document.Document</a>(<a href="frappe.model.base_document.html#BaseDocument">frappe.model.base_document.BaseDocument</a>)
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="h_and_t_billing.html#HandTBilling">HandTBilling</a>
+</font></dt></dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="HandTBilling">class <strong>HandTBilling</strong></a>(<a href="frappe.model.document.html#Document">frappe.model.document.Document</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#HandTBilling">HandTBilling</a>(*args,&nbsp;**kwargs)<br>
+&nbsp;<br>
+H&nbsp;and&nbsp;T&nbsp;billing&nbsp;class<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="h_and_t_billing.html#HandTBilling">HandTBilling</a></dd>
+<dd><a href="frappe.model.document.html#Document">frappe.model.document.Document</a></dd>
+<dd><a href="frappe.model.base_document.html#BaseDocument">frappe.model.base_document.BaseDocument</a></dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="HandTBilling-add_deduction_doc"><strong>add_deduction_doc</strong></a>(self)</dt><dd><tt>Add&nbsp;new&nbsp;Deduction&nbsp;<a href="frappe.model.document.html#Document">Document</a>&nbsp;in&nbsp;deduction&nbsp;form<br>
+&nbsp;<br>
+@params:self<br>
+@returns:None</tt></dd></dl>
+
+<dl><dt><a name="HandTBilling-before_cancel"><strong>before_cancel</strong></a>(self)</dt><dd><tt>Executes&nbsp;before&nbsp;canceling&nbsp;<a href="frappe.model.document.html#Document">Document</a><br>
+&nbsp;<br>
+@params:self<br>
+@returns:None</tt></dd></dl>
+
+<dl><dt><a name="HandTBilling-before_save"><strong>before_save</strong></a>(self)</dt><dd><tt>#To&nbsp;update&nbsp;the&nbsp;status&nbsp;after&nbsp;before&nbsp;save&nbsp;event&nbsp;on&nbsp;cane&nbsp;weight&nbsp;doctype</tt></dd></dl>
+
+<dl><dt><a name="HandTBilling-before_submit"><strong>before_submit</strong></a>(self)</dt><dd><tt>#To&nbsp;update&nbsp;the&nbsp;status&nbsp;after&nbsp;before&nbsp;submit&nbsp;event&nbsp;on&nbsp;cane&nbsp;weight&nbsp;doctype</tt></dd></dl>
+
+<dl><dt><a name="HandTBilling-bill_status_change_of_cane_weight_on_trash"><strong>bill_status_change_of_cane_weight_on_trash</strong></a>(self)</dt><dd><tt>set&nbsp;h_and_t_billing_status&nbsp;to&nbsp;false&nbsp;for&nbsp;respective&nbsp;documents<br>
+on&nbsp;Cane&nbsp;Weight&nbsp;Doctype<br>
+&nbsp;<br>
+@params:self<br>
+@returns:None</tt></dd></dl>
+
+<dl><dt><a name="HandTBilling-cancel_journal_entry"><strong>cancel_journal_entry</strong></a>(self)</dt><dd><tt>cancels&nbsp;journal&nbsp;entry<br>
+&nbsp;<br>
+@params:self<br>
+@returns:None</tt></dd></dl>
+
+<dl><dt><a name="HandTBilling-change_status_on_cane_weight"><strong>change_status_on_cane_weight</strong></a>(self)</dt><dd><tt>Changes&nbsp;Status&nbsp;of&nbsp;h_and_t_billing_status&nbsp;to&nbsp;True<br>
+&nbsp;<br>
+@params:self<br>
+@returns:None</tt></dd></dl>
+
+<dl><dt><a name="HandTBilling-delete_hire_ded"><strong>delete_hire_ded</strong></a>(self)</dt><dd><tt>It&nbsp;cancels&nbsp;the&nbsp;Deduction&nbsp;Form&nbsp;document<br>
+which&nbsp;has&nbsp;greater&nbsp;remaining&nbsp;hire&nbsp;charge&nbsp;and&nbsp;type&nbsp;should&nbsp;be&nbsp;equal&nbsp;to&nbsp;Transporter<br>
+&nbsp;<br>
+@params:self<br>
+@returns:None</tt></dd></dl>
+
+<dl><dt><a name="HandTBilling-delete_issue_date"><strong>delete_issue_date</strong></a>(self)</dt><dd><tt>Deletes&nbsp;updated&nbsp;issue&nbsp;date&nbsp;from&nbsp;Vehicle&nbsp;Registration<br>
+&nbsp;<br>
+@params:self<br>
+@returns:None</tt></dd></dl>
+
+<dl><dt><a name="HandTBilling-delete_row_record"><strong>delete_row_record</strong></a>(self)</dt><dd><tt>Delete&nbsp;record&nbsp;which&nbsp;is&nbsp;having&nbsp;check&nbsp;False<br>
+&nbsp;<br>
+@params:self<br>
+@returns:None</tt></dd></dl>
+
+<dl><dt><a name="HandTBilling-get_all_data_calcalation"><strong>get_all_data_calcalation</strong></a>(self)</dt><dd><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;It&nbsp;calculates&nbsp;all&nbsp;required&nbsp;data&nbsp;such&nbsp;as&nbsp;deduction,&nbsp;diesel&nbsp;allocation,&nbsp;amount&nbsp;collection<br>
+according&nbsp;to&nbsp;respective&nbsp;vendor&nbsp;type<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@params:self<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@returns:None</tt></dd></dl>
+
+<dl><dt><a name="HandTBilling-get_data"><strong>get_data</strong></a>(self)</dt><dd><tt>At&nbsp;first&nbsp;we&nbsp;get&nbsp;all&nbsp;document&nbsp;list&nbsp;having&nbsp;docstatus&nbsp;1&nbsp;those&nbsp;are&nbsp;between&nbsp;selected&nbsp;dates&nbsp;and&nbsp;season&nbsp;from&nbsp;Cane&nbsp;Weight&nbsp;Doctype<br>
+After&nbsp;that&nbsp;it&nbsp;fetches&nbsp;unique&nbsp;transporter_code&nbsp;from&nbsp;list&nbsp;and&nbsp;append&nbsp;it&nbsp;to&nbsp;trans_list&nbsp;and&nbsp;vendor_list&nbsp;variables<br>
+After&nbsp;that&nbsp;it&nbsp;fetches&nbsp;unique&nbsp;harvestor_code&nbsp;and&nbsp;append&nbsp;it&nbsp;to&nbsp;trans_list&nbsp;and&nbsp;vendor_list&nbsp;variables<br>
+And&nbsp;then&nbsp;it&nbsp;appends&nbsp;all&nbsp;uniquely&nbsp;fetched&nbsp;data&nbsp;to&nbsp;h_and_t&nbsp;child&nbsp;table&nbsp;<br>
+&nbsp;<br>
+@params:self<br>
+@returns:None</tt></dd></dl>
+
+<dl><dt><a name="HandTBilling-get_rate"><strong>get_rate</strong></a>(self, distance, vehicle_type, vender_type)</dt><dd><tt>Get&nbsp;rate&nbsp;according&nbsp;distance,&nbsp;vehicle_type,&nbsp;vendor_type<br>
+&nbsp;<br>
+@params:self,distance(float),vehicle_type(str),&nbsp;vendor_type(str)<br>
+@returns:rate_per_km</tt></dd></dl>
+
+<dl><dt><a name="HandTBilling-je_of_sales_invoice_and_farmer_loan"><strong>je_of_sales_invoice_and_farmer_loan</strong></a>(self)</dt><dd><tt>Inserts&nbsp;journal&nbsp;Entry&nbsp;according&nbsp;respective&nbsp;conditions<br>
+&nbsp;<br>
+@params:self<br>
+@returns:None</tt></dd></dl>
+
+<dl><dt><a name="HandTBilling-on_trash"><strong>on_trash</strong></a>(self)</dt><dd><tt>To&nbsp;update&nbsp;the&nbsp;status&nbsp;ater&nbsp;before&nbsp;cancel&nbsp;event&nbsp;on&nbsp;cane&nbsp;weight&nbsp;doctype<br>
+&nbsp;<br>
+@params:self<br>
+@returns:None</tt></dd></dl>
+
+<dl><dt><a name="HandTBilling-selectall"><strong>selectall</strong></a>(self)</dt><dd><tt>selects&nbsp;all&nbsp;children&nbsp;and&nbsp;checks&nbsp;all&nbsp;are&nbsp;checked&nbsp;and&nbsp;marks&nbsp;their&nbsp;status&nbsp;as&nbsp;True<br>
+&nbsp;<br>
+@params:self<br>
+@returns:None</tt></dd></dl>
+
+<dl><dt><a name="HandTBilling-set_date_in_farmer_loan_child_for_next_installment"><strong>set_date_in_farmer_loan_child_for_next_installment</strong></a>(self)</dt><dd><tt>Updates&nbsp;Interest&nbsp;calculation&nbsp;from&nbsp;subsequent&nbsp;dates&nbsp;on&nbsp;Deduction&nbsp;form&nbsp;document<br>
+&nbsp;<br>
+@params:self<br>
+@returns:None</tt></dd></dl>
+
+<dl><dt><a name="HandTBilling-set_date_in_farmer_loan_child_for_next_installment_on_cancel"><strong>set_date_in_farmer_loan_child_for_next_installment_on_cancel</strong></a>(self)</dt><dd><tt>It&nbsp;Sets&nbsp;date&nbsp;in&nbsp;farmer&nbsp;loan&nbsp;child&nbsp;for&nbsp;<br>
+next&nbsp;installment&nbsp;after&nbsp;cancellation&nbsp;of&nbsp;document<br>
+&nbsp;<br>
+@params:self<br>
+@returns:None</tt></dd></dl>
+
+<dl><dt><a name="HandTBilling-set_issue_date"><strong>set_issue_date</strong></a>(self)</dt><dd><tt>updates&nbsp;issue&nbsp;date&nbsp;to&nbsp;to_date&nbsp;according&nbsp;to&nbsp;respective&nbsp;conditions<br>
+&nbsp;<br>
+@params:self<br>
+@returns:None</tt></dd></dl>
+
+<dl><dt><a name="HandTBilling-total_values"><strong>total_values</strong></a>(self)</dt><dd><tt>calculates&nbsp;All&nbsp;total&nbsp;values&nbsp;according&nbsp;to&nbsp;vendor&nbsp;type&nbsp;as&nbsp;Transporter,&nbsp;Harvestor&nbsp;and&nbsp;Bullock&nbsp;Cart<br>
+which&nbsp;includes&nbsp;total&nbsp;weight,total&nbsp;deduction&nbsp;amount,&nbsp;total&nbsp;collection&nbsp;amount&nbsp;and&nbsp;total&nbsp;payble&nbsp;amount&nbsp;<br>
+&nbsp;<br>
+@params:self<br>
+@returns:None</tt></dd></dl>
+
+<dl><dt><a name="HandTBilling-update_value_in_deduction_form"><strong>update_value_in_deduction_form</strong></a>(self)</dt><dd><tt>Updates&nbsp;Deduction&nbsp;status&nbsp;on&nbsp;Deduction&nbsp;form&nbsp;as&nbsp;1<br>
+&nbsp;<br>
+@params:self<br>
+@returns:None</tt></dd></dl>
+
+<dl><dt><a name="HandTBilling-update_value_in_deduction_form_on_cancel"><strong>update_value_in_deduction_form_on_cancel</strong></a>(self)</dt><dd><tt>It&nbsp;updates&nbsp;value&nbsp;in&nbsp;deduction&nbsp;form&nbsp;on&nbsp;cancel<br>
+&nbsp;<br>
+@params:self<br>
+@returns:jNone</tt></dd></dl>
+
+<dl><dt><a name="HandTBilling-update_value_in_farmer_loan"><strong>update_value_in_farmer_loan</strong></a>(self)</dt><dd><tt>Updates&nbsp;paid&nbsp;amount&nbsp;in&nbsp;deduction&nbsp;form&nbsp;according&nbsp;to&nbsp;respective&nbsp;conditions<br>
+&nbsp;<br>
+@params:self<br>
+@returns:None</tt></dd></dl>
+
+<dl><dt><a name="HandTBilling-update_value_in_farmer_loan_cancel"><strong>update_value_in_farmer_loan_cancel</strong></a>(self)</dt><dd><tt>It&nbsp;updates&nbsp;values&nbsp;after&nbsp;cancellation<br>
+&nbsp;<br>
+@params:&nbsp;self<br>
+@returns:None</tt></dd></dl>
+
+<hr>
+Methods inherited from <a href="frappe.model.document.html#Document">frappe.model.document.Document</a>:<br>
+<dl><dt><a name="HandTBilling-__init__"><strong>__init__</strong></a>(self, *args, **kwargs)</dt><dd><tt>Constructor.<br>
+&nbsp;<br>
+:param&nbsp;arg1:&nbsp;DocType&nbsp;name&nbsp;as&nbsp;string&nbsp;or&nbsp;document&nbsp;**dict**<br>
+:param&nbsp;arg2:&nbsp;<a href="frappe.model.document.html#Document">Document</a>&nbsp;name,&nbsp;if&nbsp;`arg1`&nbsp;is&nbsp;DocType&nbsp;name.<br>
+&nbsp;<br>
+If&nbsp;DocType&nbsp;name&nbsp;and&nbsp;document&nbsp;name&nbsp;are&nbsp;passed,&nbsp;the&nbsp;object&nbsp;will&nbsp;load<br>
+all&nbsp;values&nbsp;(including&nbsp;child&nbsp;documents)&nbsp;from&nbsp;the&nbsp;database.</tt></dd></dl>
+
+<dl><dt><a name="HandTBilling-__repr__"><strong>__repr__</strong></a>(self)</dt><dd><tt>Return&nbsp;repr(self).</tt></dd></dl>
+
+<dl><dt><a name="HandTBilling-__str__"><strong>__str__</strong></a>(self)</dt><dd><tt>Return&nbsp;str(self).</tt></dd></dl>
+
+<dl><dt><a name="HandTBilling-add_comment"><strong>add_comment</strong></a>(self, comment_type='Comment', text=None, comment_email=None, comment_by=None)</dt><dd><tt>Add&nbsp;a&nbsp;comment&nbsp;to&nbsp;this&nbsp;document.<br>
+&nbsp;<br>
+:param&nbsp;comment_type:&nbsp;e.g.&nbsp;`Comment`.&nbsp;See&nbsp;Communication&nbsp;for&nbsp;more&nbsp;info.</tt></dd></dl>
+
+<dl><dt><a name="HandTBilling-add_seen"><strong>add_seen</strong></a>(self, user=None)</dt><dd><tt>add&nbsp;the&nbsp;given/current&nbsp;user&nbsp;to&nbsp;list&nbsp;of&nbsp;users&nbsp;who&nbsp;have&nbsp;seen&nbsp;this&nbsp;document&nbsp;(_seen)</tt></dd></dl>
+
+<dl><dt><a name="HandTBilling-add_tag"><strong>add_tag</strong></a>(self, tag)</dt><dd><tt>Add&nbsp;a&nbsp;Tag&nbsp;to&nbsp;this&nbsp;document</tt></dd></dl>
+
+<dl><dt><a name="HandTBilling-add_viewed"><strong>add_viewed</strong></a>(self, user=None)</dt><dd><tt>add&nbsp;log&nbsp;to&nbsp;communication&nbsp;when&nbsp;a&nbsp;user&nbsp;views&nbsp;a&nbsp;document</tt></dd></dl>
+
+<dl><dt><a name="HandTBilling-apply_fieldlevel_read_permissions"><strong>apply_fieldlevel_read_permissions</strong></a>(self)</dt><dd><tt>Remove&nbsp;values&nbsp;the&nbsp;user&nbsp;is&nbsp;not&nbsp;allowed&nbsp;to&nbsp;read.</tt></dd></dl>
+
+<dl><dt><a name="HandTBilling-cancel"><strong>cancel</strong></a>(self)</dt><dd><tt>Cancel&nbsp;the&nbsp;document.&nbsp;Sets&nbsp;`docstatus`&nbsp;=&nbsp;2,&nbsp;then&nbsp;saves.</tt></dd></dl>
+
+<dl><dt><a name="HandTBilling-check_docstatus_transition"><strong>check_docstatus_transition</strong></a>(self, to_docstatus)</dt><dd><tt>Ensures&nbsp;valid&nbsp;`docstatus`&nbsp;transition.<br>
+Valid&nbsp;transitions&nbsp;are&nbsp;(number&nbsp;in&nbsp;brackets&nbsp;is&nbsp;`docstatus`):<br>
+&nbsp;<br>
+-&nbsp;Save&nbsp;(0)&nbsp;&gt;&nbsp;Save&nbsp;(0)<br>
+-&nbsp;Save&nbsp;(0)&nbsp;&gt;&nbsp;Submit&nbsp;(1)<br>
+-&nbsp;Submit&nbsp;(1)&nbsp;&gt;&nbsp;Submit&nbsp;(1)<br>
+-&nbsp;Submit&nbsp;(1)&nbsp;&gt;&nbsp;Cancel&nbsp;(2)</tt></dd></dl>
+
+<dl><dt><a name="HandTBilling-check_if_latest"><strong>check_if_latest</strong></a>(self)</dt><dd><tt>Checks&nbsp;if&nbsp;`modified`&nbsp;timestamp&nbsp;provided&nbsp;by&nbsp;document&nbsp;being&nbsp;updated&nbsp;is&nbsp;same&nbsp;as&nbsp;the<br>
+`modified`&nbsp;timestamp&nbsp;in&nbsp;the&nbsp;database.&nbsp;If&nbsp;there&nbsp;is&nbsp;a&nbsp;different,&nbsp;the&nbsp;document&nbsp;has&nbsp;been<br>
+updated&nbsp;in&nbsp;the&nbsp;database&nbsp;after&nbsp;the&nbsp;current&nbsp;copy&nbsp;was&nbsp;read.&nbsp;Will&nbsp;throw&nbsp;an&nbsp;error&nbsp;if<br>
+timestamps&nbsp;don't&nbsp;match.<br>
+&nbsp;<br>
+Will&nbsp;also&nbsp;validate&nbsp;document&nbsp;transitions&nbsp;(Save&nbsp;&gt;&nbsp;Submit&nbsp;&gt;&nbsp;Cancel)&nbsp;calling<br>
+`self.<strong>check_docstatus_transition</strong>`.</tt></dd></dl>
+
+<dl><dt><a name="HandTBilling-check_no_back_links_exist"><strong>check_no_back_links_exist</strong></a>(self)</dt><dd><tt>Check&nbsp;if&nbsp;document&nbsp;links&nbsp;to&nbsp;any&nbsp;active&nbsp;document&nbsp;before&nbsp;Cancel.</tt></dd></dl>
+
+<dl><dt><a name="HandTBilling-check_permission"><strong>check_permission</strong></a>(self, permtype='read', permlevel=None)</dt><dd><tt>Raise&nbsp;`frappe.PermissionError`&nbsp;if&nbsp;not&nbsp;permitted</tt></dd></dl>
+
+<dl><dt><a name="HandTBilling-clear_cache"><strong>clear_cache</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="HandTBilling-copy_attachments_from_amended_from"><strong>copy_attachments_from_amended_from</strong></a>(self)</dt><dd><tt>Copy&nbsp;attachments&nbsp;from&nbsp;`amended_from`</tt></dd></dl>
+
+<dl><dt><a name="HandTBilling-db_get"><strong>db_get</strong></a>(self, fieldname)</dt><dd><tt>get&nbsp;database&nbsp;value&nbsp;for&nbsp;this&nbsp;fieldname</tt></dd></dl>
+
+<dl><dt><a name="HandTBilling-db_set"><strong>db_set</strong></a>(self, fieldname, value=None, update_modified=True, notify=False, commit=False)</dt><dd><tt>Set&nbsp;a&nbsp;value&nbsp;in&nbsp;the&nbsp;document&nbsp;object,&nbsp;update&nbsp;the&nbsp;timestamp&nbsp;and&nbsp;update&nbsp;the&nbsp;database.<br>
+&nbsp;<br>
+WARNING:&nbsp;This&nbsp;method&nbsp;does&nbsp;not&nbsp;trigger&nbsp;controller&nbsp;validations&nbsp;and&nbsp;should<br>
+be&nbsp;used&nbsp;very&nbsp;carefully.<br>
+&nbsp;<br>
+:param&nbsp;fieldname:&nbsp;fieldname&nbsp;of&nbsp;the&nbsp;property&nbsp;to&nbsp;be&nbsp;updated,&nbsp;or&nbsp;a&nbsp;{"field":"value"}&nbsp;dictionary<br>
+:param&nbsp;value:&nbsp;value&nbsp;of&nbsp;the&nbsp;property&nbsp;to&nbsp;be&nbsp;updated<br>
+:param&nbsp;update_modified:&nbsp;default&nbsp;True.&nbsp;updates&nbsp;the&nbsp;`modified`&nbsp;and&nbsp;`modified_by`&nbsp;properties<br>
+:param&nbsp;notify:&nbsp;default&nbsp;False.&nbsp;run&nbsp;doc.<a href="#HandTBilling-notify_update">notify_update</a>()&nbsp;to&nbsp;send&nbsp;updates&nbsp;via&nbsp;socketio<br>
+:param&nbsp;commit:&nbsp;default&nbsp;False.&nbsp;run&nbsp;frappe.db.commit()</tt></dd></dl>
+
+<dl><dt><a name="HandTBilling-deferred_insert"><strong>deferred_insert</strong></a>(self) -&gt; None</dt><dd><tt>Push&nbsp;the&nbsp;document&nbsp;to&nbsp;redis&nbsp;temporarily&nbsp;and&nbsp;insert&nbsp;later.<br>
+&nbsp;<br>
+WARN:&nbsp;This&nbsp;doesn't&nbsp;guarantee&nbsp;insertion&nbsp;as&nbsp;redis&nbsp;can&nbsp;be&nbsp;restarted<br>
+before&nbsp;data&nbsp;is&nbsp;flushed&nbsp;to&nbsp;database.</tt></dd></dl>
+
+<dl><dt><a name="HandTBilling-delete"><strong>delete</strong></a>(self, ignore_permissions=False, *, force=False, delete_permanently=False)</dt><dd><tt>Delete&nbsp;document.</tt></dd></dl>
+
+<dl><dt><a name="HandTBilling-get_all_children"><strong>get_all_children</strong></a>(self, parenttype=None) -&gt; list['Document']</dt><dd><tt>Returns&nbsp;all&nbsp;children&nbsp;documents&nbsp;from&nbsp;**Table**&nbsp;type&nbsp;fields&nbsp;in&nbsp;a&nbsp;list.</tt></dd></dl>
+
+<dl><dt><a name="HandTBilling-get_assigned_users"><strong>get_assigned_users</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="HandTBilling-get_doc_before_save"><strong>get_doc_before_save</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="HandTBilling-get_document_share_key"><strong>get_document_share_key</strong></a>(self, expires_on=None, no_expiry=False)</dt></dl>
+
+<dl><dt><a name="HandTBilling-get_latest"><strong>get_latest</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="HandTBilling-get_liked_by"><strong>get_liked_by</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="HandTBilling-get_onload"><strong>get_onload</strong></a>(self, key=None)</dt></dl>
+
+<dl><dt><a name="HandTBilling-get_permissions"><strong>get_permissions</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="HandTBilling-get_permlevel_access"><strong>get_permlevel_access</strong></a>(self, permission_type='write')</dt></dl>
+
+<dl><dt><a name="HandTBilling-get_signature"><strong>get_signature</strong></a>(self)</dt><dd><tt>Returns&nbsp;signature&nbsp;(hash)&nbsp;for&nbsp;private&nbsp;URL.</tt></dd></dl>
+
+<dl><dt><a name="HandTBilling-get_tags"><strong>get_tags</strong></a>(self)</dt><dd><tt>Return&nbsp;a&nbsp;list&nbsp;of&nbsp;Tags&nbsp;attached&nbsp;to&nbsp;this&nbsp;document</tt></dd></dl>
+
+<dl><dt><a name="HandTBilling-get_title"><strong>get_title</strong></a>(self)</dt><dd><tt>Get&nbsp;the&nbsp;document&nbsp;title&nbsp;based&nbsp;on&nbsp;title_field&nbsp;or&nbsp;`title`&nbsp;or&nbsp;`name`</tt></dd></dl>
+
+<dl><dt><a name="HandTBilling-get_url"><strong>get_url</strong></a>(self)</dt><dd><tt>Returns&nbsp;Desk&nbsp;URL&nbsp;for&nbsp;this&nbsp;document.</tt></dd></dl>
+
+<dl><dt><a name="HandTBilling-has_permission"><strong>has_permission</strong></a>(self, permtype='read', verbose=False) -&gt; bool</dt><dd><tt>Call&nbsp;`frappe.permissions.has_permission`&nbsp;if&nbsp;`ignore_permissions`&nbsp;flag&nbsp;isn't&nbsp;truthy<br>
+&nbsp;<br>
+:param&nbsp;permtype:&nbsp;`read`,&nbsp;`write`,&nbsp;`submit`,&nbsp;`cancel`,&nbsp;`delete`,&nbsp;etc.<br>
+:param&nbsp;verbose:&nbsp;DEPRECATED,&nbsp;will&nbsp;be&nbsp;removed&nbsp;in&nbsp;a&nbsp;future&nbsp;release.</tt></dd></dl>
+
+<dl><dt><a name="HandTBilling-has_permlevel_access_to"><strong>has_permlevel_access_to</strong></a>(self, fieldname, df=None, permission_type='read')</dt></dl>
+
+<dl><dt><a name="HandTBilling-has_value_changed"><strong>has_value_changed</strong></a>(self, fieldname)</dt><dd><tt>Return&nbsp;True&nbsp;if&nbsp;value&nbsp;has&nbsp;changed&nbsp;before&nbsp;and&nbsp;after&nbsp;saving.</tt></dd></dl>
+
+<dl><dt><a name="HandTBilling-insert"><strong>insert</strong></a>(self, ignore_permissions=None, ignore_links=None, ignore_if_duplicate=False, ignore_mandatory=None, set_name=None, set_child_names=True) -&gt; 'Document'</dt><dd><tt>Insert&nbsp;the&nbsp;document&nbsp;in&nbsp;the&nbsp;database&nbsp;(as&nbsp;a&nbsp;new&nbsp;document).<br>
+This&nbsp;will&nbsp;check&nbsp;for&nbsp;user&nbsp;permissions&nbsp;and&nbsp;execute&nbsp;`before_insert`,<br>
+`validate`,&nbsp;`on_update`,&nbsp;`after_insert`&nbsp;methods&nbsp;if&nbsp;they&nbsp;are&nbsp;written.<br>
+&nbsp;<br>
+:param&nbsp;ignore_permissions:&nbsp;Do&nbsp;not&nbsp;check&nbsp;permissions&nbsp;if&nbsp;True.</tt></dd></dl>
+
+<dl><dt><a name="HandTBilling-is_child_table_same"><strong>is_child_table_same</strong></a>(self, fieldname)</dt><dd><tt>Validate&nbsp;child&nbsp;table&nbsp;is&nbsp;same&nbsp;as&nbsp;original&nbsp;table&nbsp;before&nbsp;saving</tt></dd></dl>
+
+<dl><dt><a name="HandTBilling-is_whitelisted"><strong>is_whitelisted</strong></a>(self, method_name)</dt></dl>
+
+<dl><dt><a name="HandTBilling-load_doc_before_save"><strong>load_doc_before_save</strong></a>(self, *, raise_exception: bool = False)</dt><dd><tt>load&nbsp;existing&nbsp;document&nbsp;from&nbsp;db&nbsp;before&nbsp;saving</tt></dd></dl>
+
+<dl><dt><a name="HandTBilling-load_from_db"><strong>load_from_db</strong></a>(self)</dt><dd><tt>Load&nbsp;document&nbsp;and&nbsp;children&nbsp;from&nbsp;database&nbsp;and&nbsp;create&nbsp;properties<br>
+from&nbsp;fields</tt></dd></dl>
+
+<dl><dt><a name="HandTBilling-lock"><strong>lock</strong></a>(self, timeout=None)</dt><dd><tt>Creates&nbsp;a&nbsp;lock&nbsp;file&nbsp;for&nbsp;the&nbsp;given&nbsp;document.&nbsp;If&nbsp;timeout&nbsp;is&nbsp;set,<br>
+it&nbsp;will&nbsp;retry&nbsp;every&nbsp;1&nbsp;second&nbsp;for&nbsp;acquiring&nbsp;the&nbsp;lock&nbsp;again<br>
+&nbsp;<br>
+:param&nbsp;timeout:&nbsp;Timeout&nbsp;in&nbsp;seconds,&nbsp;default&nbsp;0</tt></dd></dl>
+
+<dl><dt><a name="HandTBilling-log_error"><strong>log_error</strong></a>(self, title=None, message=None)</dt><dd><tt>Helper&nbsp;function&nbsp;to&nbsp;create&nbsp;an&nbsp;Error&nbsp;Log</tt></dd></dl>
+
+<dl><dt><a name="HandTBilling-notify_update"><strong>notify_update</strong></a>(self)</dt><dd><tt>Publish&nbsp;realtime&nbsp;that&nbsp;the&nbsp;current&nbsp;document&nbsp;is&nbsp;modified</tt></dd></dl>
+
+<dl><dt><a name="HandTBilling-queue_action"><strong>queue_action</strong></a>(self, action, **kwargs)</dt><dd><tt>Run&nbsp;an&nbsp;action&nbsp;in&nbsp;background.&nbsp;If&nbsp;the&nbsp;action&nbsp;has&nbsp;an&nbsp;inner&nbsp;function,<br>
+like&nbsp;_submit&nbsp;for&nbsp;submit,&nbsp;it&nbsp;will&nbsp;call&nbsp;that&nbsp;instead</tt></dd></dl>
+
+<dl><dt><a name="HandTBilling-raise_no_permission_to"><strong>raise_no_permission_to</strong></a>(self, perm_type)</dt><dd><tt>Raise&nbsp;`frappe.PermissionError`.</tt></dd></dl>
+
+<dl><dt><a name="HandTBilling-reload"><strong>reload</strong></a>(self)</dt><dd><tt>Reload&nbsp;document&nbsp;from&nbsp;database</tt></dd></dl>
+
+<dl><dt><a name="HandTBilling-rename"><strong>rename</strong></a>(self, name: str, merge: bool = False, force: bool = False, validate_rename: bool = True)</dt><dd><tt>Rename&nbsp;the&nbsp;document&nbsp;to&nbsp;`name`.&nbsp;This&nbsp;transforms&nbsp;the&nbsp;current&nbsp;object.</tt></dd></dl>
+
+<dl><dt><a name="HandTBilling-reset_seen"><strong>reset_seen</strong></a>(self)</dt><dd><tt>Clear&nbsp;_seen&nbsp;property&nbsp;and&nbsp;set&nbsp;current&nbsp;user&nbsp;as&nbsp;seen</tt></dd></dl>
+
+<dl><dt><a name="HandTBilling-round_floats_in"><strong>round_floats_in</strong></a>(self, doc, fieldnames=None)</dt><dd><tt>Round&nbsp;floats&nbsp;for&nbsp;all&nbsp;`Currency`,&nbsp;`Float`,&nbsp;`Percent`&nbsp;fields&nbsp;for&nbsp;the&nbsp;given&nbsp;doc.<br>
+&nbsp;<br>
+:param&nbsp;doc:&nbsp;<a href="frappe.model.document.html#Document">Document</a>&nbsp;whose&nbsp;numeric&nbsp;properties&nbsp;are&nbsp;to&nbsp;be&nbsp;rounded.<br>
+:param&nbsp;fieldnames:&nbsp;[Optional]&nbsp;List&nbsp;of&nbsp;fields&nbsp;to&nbsp;be&nbsp;rounded.</tt></dd></dl>
+
+<dl><dt><a name="HandTBilling-run_before_save_methods"><strong>run_before_save_methods</strong></a>(self)</dt><dd><tt>Run&nbsp;standard&nbsp;methods&nbsp;before&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`INSERT`&nbsp;or&nbsp;`UPDATE`.&nbsp;Standard&nbsp;Methods&nbsp;are:<br>
+&nbsp;<br>
+-&nbsp;`validate`,&nbsp;`before_save`&nbsp;for&nbsp;**Save**.<br>
+-&nbsp;`validate`,&nbsp;`before_submit`&nbsp;for&nbsp;**Submit**.<br>
+-&nbsp;`before_cancel`&nbsp;for&nbsp;**Cancel**<br>
+-&nbsp;`before_update_after_submit`&nbsp;for&nbsp;**Update&nbsp;after&nbsp;Submit**<br>
+&nbsp;<br>
+Will&nbsp;also&nbsp;update&nbsp;title_field&nbsp;if&nbsp;set</tt></dd></dl>
+
+<dl><dt><a name="HandTBilling-run_method"><strong>run_method</strong></a>(self, method, *args, **kwargs)</dt><dd><tt>run&nbsp;standard&nbsp;triggers,&nbsp;plus&nbsp;those&nbsp;in&nbsp;hooks</tt></dd></dl>
+
+<dl><dt><a name="HandTBilling-run_notifications"><strong>run_notifications</strong></a>(self, method)</dt><dd><tt>Run&nbsp;notifications&nbsp;for&nbsp;this&nbsp;method</tt></dd></dl>
+
+<dl><dt><a name="HandTBilling-run_post_save_methods"><strong>run_post_save_methods</strong></a>(self)</dt><dd><tt>Run&nbsp;standard&nbsp;methods&nbsp;after&nbsp;`INSERT`&nbsp;or&nbsp;`UPDATE`.&nbsp;Standard&nbsp;Methods&nbsp;are:<br>
+&nbsp;<br>
+-&nbsp;`on_update`&nbsp;for&nbsp;**Save**.<br>
+-&nbsp;`on_update`,&nbsp;`on_submit`&nbsp;for&nbsp;**Submit**.<br>
+-&nbsp;`on_cancel`&nbsp;for&nbsp;**Cancel**<br>
+-&nbsp;`update_after_submit`&nbsp;for&nbsp;**Update&nbsp;after&nbsp;Submit**</tt></dd></dl>
+
+<dl><dt><a name="HandTBilling-run_trigger"><strong>run_trigger</strong></a>(self, method, *args, **kwargs)</dt></dl>
+
+<dl><dt><a name="HandTBilling-save"><strong>save</strong></a>(self, *args, **kwargs)</dt><dd><tt>Wrapper&nbsp;for&nbsp;_save</tt></dd></dl>
+
+<dl><dt><a name="HandTBilling-save_version"><strong>save_version</strong></a>(self)</dt><dd><tt>Save&nbsp;version&nbsp;info</tt></dd></dl>
+
+<dl><dt><a name="HandTBilling-set_docstatus"><strong>set_docstatus</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="HandTBilling-set_name_in_children"><strong>set_name_in_children</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="HandTBilling-set_new_name"><strong>set_new_name</strong></a>(self, force=False, set_name=None, set_child_names=True)</dt><dd><tt>Calls&nbsp;`frappe.naming.set_new_name`&nbsp;for&nbsp;parent&nbsp;and&nbsp;child&nbsp;docs.</tt></dd></dl>
+
+<dl><dt><a name="HandTBilling-set_onload"><strong>set_onload</strong></a>(self, key, value)</dt></dl>
+
+<dl><dt><a name="HandTBilling-set_parent_in_children"><strong>set_parent_in_children</strong></a>(self)</dt><dd><tt>Updates&nbsp;`parent`&nbsp;and&nbsp;`parenttype`&nbsp;property&nbsp;in&nbsp;all&nbsp;children.</tt></dd></dl>
+
+<dl><dt><a name="HandTBilling-set_title_field"><strong>set_title_field</strong></a>(self)</dt><dd><tt>Set&nbsp;title&nbsp;field&nbsp;based&nbsp;on&nbsp;template</tt></dd></dl>
+
+<dl><dt><a name="HandTBilling-set_user_and_timestamp"><strong>set_user_and_timestamp</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="HandTBilling-submit"><strong>submit</strong></a>(self)</dt><dd><tt>Submit&nbsp;the&nbsp;document.&nbsp;Sets&nbsp;`docstatus`&nbsp;=&nbsp;1,&nbsp;then&nbsp;saves.</tt></dd></dl>
+
+<dl><dt><a name="HandTBilling-unlock"><strong>unlock</strong></a>(self)</dt><dd><tt>Delete&nbsp;the&nbsp;lock&nbsp;file&nbsp;for&nbsp;this&nbsp;document</tt></dd></dl>
+
+<dl><dt><a name="HandTBilling-update_child_table"><strong>update_child_table</strong></a>(self, fieldname, df=None)</dt><dd><tt>sync&nbsp;child&nbsp;table&nbsp;for&nbsp;given&nbsp;fieldname</tt></dd></dl>
+
+<dl><dt><a name="HandTBilling-update_children"><strong>update_children</strong></a>(self)</dt><dd><tt>update&nbsp;child&nbsp;tables</tt></dd></dl>
+
+<dl><dt><a name="HandTBilling-update_single"><strong>update_single</strong></a>(self, d)</dt><dd><tt>Updates&nbsp;values&nbsp;for&nbsp;Single&nbsp;type&nbsp;<a href="frappe.model.document.html#Document">Document</a>&nbsp;in&nbsp;`tabSingles`.</tt></dd></dl>
+
+<dl><dt><a name="HandTBilling-validate_from_to_dates"><strong>validate_from_to_dates</strong></a>(self, from_date_field, to_date_field)</dt><dd><tt>Generic&nbsp;validation&nbsp;to&nbsp;verify&nbsp;date&nbsp;sequence</tt></dd></dl>
+
+<dl><dt><a name="HandTBilling-validate_higher_perm_levels"><strong>validate_higher_perm_levels</strong></a>(self)</dt><dd><tt>If&nbsp;the&nbsp;user&nbsp;does&nbsp;not&nbsp;have&nbsp;permissions&nbsp;at&nbsp;permlevel&nbsp;&gt;&nbsp;0,&nbsp;then&nbsp;reset&nbsp;the&nbsp;values&nbsp;to&nbsp;original&nbsp;/&nbsp;default</tt></dd></dl>
+
+<dl><dt><a name="HandTBilling-validate_set_only_once"><strong>validate_set_only_once</strong></a>(self)</dt><dd><tt>Validate&nbsp;that&nbsp;fields&nbsp;are&nbsp;not&nbsp;changed&nbsp;if&nbsp;not&nbsp;in&nbsp;insert</tt></dd></dl>
+
+<dl><dt><a name="HandTBilling-validate_table_has_rows"><strong>validate_table_has_rows</strong></a>(self, parentfield, raise_exception=None)</dt><dd><tt>Raise&nbsp;exception&nbsp;if&nbsp;Table&nbsp;field&nbsp;is&nbsp;empty.</tt></dd></dl>
+
+<dl><dt><a name="HandTBilling-validate_update_after_submit"><strong>validate_update_after_submit</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="HandTBilling-validate_value"><strong>validate_value</strong></a>(self, fieldname, condition, val2, doc=None, raise_exception=None)</dt><dd><tt>Check&nbsp;that&nbsp;value&nbsp;of&nbsp;fieldname&nbsp;should&nbsp;be&nbsp;'condition'&nbsp;val2<br>
+else&nbsp;throw&nbsp;Exception.</tt></dd></dl>
+
+<dl><dt><a name="HandTBilling-validate_workflow"><strong>validate_workflow</strong></a>(self)</dt><dd><tt>Validate&nbsp;if&nbsp;the&nbsp;workflow&nbsp;transition&nbsp;is&nbsp;valid</tt></dd></dl>
+
+<hr>
+Static methods inherited from <a href="frappe.model.document.html#Document">frappe.model.document.Document</a>:<br>
+<dl><dt><a name="HandTBilling-hook"><strong>hook</strong></a>(f)</dt><dd><tt>Decorator:&nbsp;Make&nbsp;method&nbsp;`hookable`&nbsp;(i.e.&nbsp;extensible&nbsp;by&nbsp;another&nbsp;app).<br>
+&nbsp;<br>
+Note:&nbsp;If&nbsp;each&nbsp;hooked&nbsp;method&nbsp;returns&nbsp;a&nbsp;value&nbsp;(dict),&nbsp;then&nbsp;all&nbsp;returns&nbsp;are<br>
+collated&nbsp;in&nbsp;one&nbsp;dict&nbsp;and&nbsp;returned.&nbsp;Ideally,&nbsp;don't&nbsp;return&nbsp;values&nbsp;in&nbsp;hookable<br>
+methods,&nbsp;set&nbsp;properties&nbsp;in&nbsp;the&nbsp;document.</tt></dd></dl>
+
+<dl><dt><a name="HandTBilling-whitelist"><strong>whitelist</strong></a>(fn)</dt><dd><tt>Decorator:&nbsp;Whitelist&nbsp;method&nbsp;to&nbsp;be&nbsp;called&nbsp;remotely&nbsp;via&nbsp;REST&nbsp;API.</tt></dd></dl>
+
+<hr>
+Methods inherited from <a href="frappe.model.base_document.html#BaseDocument">frappe.model.base_document.BaseDocument</a>:<br>
+<dl><dt><a name="HandTBilling-__getstate__"><strong>__getstate__</strong></a>(self)</dt><dd><tt>Called&nbsp;when&nbsp;pickling.<br>
+Returns&nbsp;a&nbsp;copy&nbsp;of&nbsp;`__dict__`&nbsp;excluding&nbsp;unpicklable&nbsp;values&nbsp;like&nbsp;`meta`.<br>
+More&nbsp;info:&nbsp;<a href="https://docs.python.org/3/library/pickle.html#handling-stateful-objects">https://docs.python.org/3/library/pickle.html#handling-stateful-objects</a></tt></dd></dl>
+
+<dl><dt><a name="HandTBilling-append"><strong>append</strong></a>(self, key, value=None)</dt><dd><tt>Append&nbsp;an&nbsp;item&nbsp;to&nbsp;a&nbsp;child&nbsp;table.<br>
+&nbsp;<br>
+Example:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;doc.<a href="#HandTBilling-append">append</a>("childtable",&nbsp;{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"child_table_field":&nbsp;"value",<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"child_table_int_field":&nbsp;0,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;})</tt></dd></dl>
+
+<dl><dt><a name="HandTBilling-as_dict"><strong>as_dict</strong></a>(self, no_nulls=False, no_default_fields=False, convert_dates_to_str=False, no_child_table_fields=False) -&gt; dict</dt></dl>
+
+<dl><dt><a name="HandTBilling-as_json"><strong>as_json</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="HandTBilling-cast"><strong>cast</strong></a>(self, value, df)</dt></dl>
+
+<dl><dt><a name="HandTBilling-db_insert"><strong>db_insert</strong></a>(self, ignore_if_duplicate=False)</dt><dd><tt>INSERT&nbsp;the&nbsp;document&nbsp;(with&nbsp;valid&nbsp;columns)&nbsp;in&nbsp;the&nbsp;database.<br>
+&nbsp;<br>
+args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ignore_if_duplicate:&nbsp;ignore&nbsp;primary&nbsp;key&nbsp;collision<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;at&nbsp;database&nbsp;level&nbsp;(postgres)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;in&nbsp;python&nbsp;(mariadb)</tt></dd></dl>
+
+<dl><dt><a name="HandTBilling-db_update"><strong>db_update</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="HandTBilling-db_update_all"><strong>db_update_all</strong></a>(self)</dt><dd><tt>Raw&nbsp;update&nbsp;parent&nbsp;+&nbsp;children<br>
+DOES&nbsp;NOT&nbsp;VALIDATE&nbsp;AND&nbsp;CALL&nbsp;TRIGGERS</tt></dd></dl>
+
+<dl><dt><a name="HandTBilling-delete_key"><strong>delete_key</strong></a>(self, key)</dt></dl>
+
+<dl><dt><a name="HandTBilling-extend"><strong>extend</strong></a>(self, key, value)</dt></dl>
+
+<dl><dt><a name="HandTBilling-get"><strong>get</strong></a>(self, key, filters=None, limit=None, default=None)</dt></dl>
+
+<dl><dt><a name="HandTBilling-get_db_value"><strong>get_db_value</strong></a>(self, key)</dt></dl>
+
+<dl><dt><a name="HandTBilling-get_field_name_by_key_name"><strong>get_field_name_by_key_name</strong></a>(self, key_name)</dt><dd><tt>MariaDB&nbsp;stores&nbsp;a&nbsp;mapping&nbsp;between&nbsp;`key_name`&nbsp;and&nbsp;`column_name`.<br>
+This&nbsp;function&nbsp;returns&nbsp;the&nbsp;`column_name`&nbsp;associated&nbsp;with&nbsp;the&nbsp;`key_name`&nbsp;passed<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;key_name&nbsp;(str):&nbsp;The&nbsp;name&nbsp;of&nbsp;the&nbsp;database&nbsp;index.<br>
+&nbsp;<br>
+Raises:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IndexError:&nbsp;If&nbsp;the&nbsp;key&nbsp;is&nbsp;not&nbsp;found&nbsp;in&nbsp;the&nbsp;table.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;str:&nbsp;The&nbsp;column&nbsp;name&nbsp;associated&nbsp;with&nbsp;the&nbsp;key.</tt></dd></dl>
+
+<dl><dt><a name="HandTBilling-get_formatted"><strong>get_formatted</strong></a>(self, fieldname, doc=None, currency=None, absolute_value=False, translated=False, format=None)</dt></dl>
+
+<dl><dt><a name="HandTBilling-get_invalid_links"><strong>get_invalid_links</strong></a>(self, is_submittable=False)</dt><dd><tt>Returns&nbsp;list&nbsp;of&nbsp;invalid&nbsp;links&nbsp;and&nbsp;also&nbsp;updates&nbsp;fetch&nbsp;values&nbsp;if&nbsp;not&nbsp;set</tt></dd></dl>
+
+<dl><dt><a name="HandTBilling-get_label_from_fieldname"><strong>get_label_from_fieldname</strong></a>(self, fieldname)</dt><dd><tt>Returns&nbsp;the&nbsp;associated&nbsp;label&nbsp;for&nbsp;fieldname<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fieldname&nbsp;(str):&nbsp;The&nbsp;fieldname&nbsp;in&nbsp;the&nbsp;DocType&nbsp;to&nbsp;use&nbsp;to&nbsp;pull&nbsp;the&nbsp;label.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;str:&nbsp;The&nbsp;label&nbsp;associated&nbsp;with&nbsp;the&nbsp;fieldname,&nbsp;if&nbsp;found,&nbsp;otherwise&nbsp;`None`.</tt></dd></dl>
+
+<dl><dt><a name="HandTBilling-get_parentfield_of_doctype"><strong>get_parentfield_of_doctype</strong></a>(self, doctype)</dt></dl>
+
+<dl><dt><a name="HandTBilling-get_password"><strong>get_password</strong></a>(self, fieldname='password', raise_exception=True)</dt></dl>
+
+<dl><dt><a name="HandTBilling-get_table_field_doctype"><strong>get_table_field_doctype</strong></a>(self, fieldname)</dt></dl>
+
+<dl><dt><a name="HandTBilling-get_valid_columns"><strong>get_valid_columns</strong></a>(self) -&gt; list[str]</dt></dl>
+
+<dl><dt><a name="HandTBilling-get_valid_dict"><strong>get_valid_dict</strong></a>(self, sanitize=True, convert_dates_to_str=False, ignore_nulls=False, ignore_virtual=False) -&gt; dict</dt></dl>
+
+<dl><dt><a name="HandTBilling-get_value"><strong>get_value</strong></a>(self, fieldname)</dt></dl>
+
+<dl><dt><a name="HandTBilling-getone"><strong>getone</strong></a>(self, key, filters=None)</dt></dl>
+
+<dl><dt><a name="HandTBilling-in_format_data"><strong>in_format_data</strong></a>(self, fieldname)</dt><dd><tt>Returns&nbsp;True&nbsp;if&nbsp;shown&nbsp;via&nbsp;Print&nbsp;Format::`format_data`&nbsp;property.<br>
+Called&nbsp;from&nbsp;within&nbsp;standard&nbsp;print&nbsp;format.</tt></dd></dl>
+
+<dl><dt><a name="HandTBilling-init_child_tables"><strong>init_child_tables</strong></a>(self)</dt><dd><tt>This&nbsp;is&nbsp;needed&nbsp;so&nbsp;that&nbsp;one&nbsp;can&nbsp;loop&nbsp;over&nbsp;child&nbsp;table&nbsp;properties<br>
+without&nbsp;worrying&nbsp;about&nbsp;whether&nbsp;or&nbsp;not&nbsp;they&nbsp;have&nbsp;values</tt></dd></dl>
+
+<dl><dt><a name="HandTBilling-init_valid_columns"><strong>init_valid_columns</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="HandTBilling-is_dummy_password"><strong>is_dummy_password</strong></a>(self, pwd)</dt></dl>
+
+<dl><dt><a name="HandTBilling-is_new"><strong>is_new</strong></a>(self) -&gt; bool</dt></dl>
+
+<dl><dt><a name="HandTBilling-is_print_hide"><strong>is_print_hide</strong></a>(self, fieldname, df=None, for_print=True)</dt><dd><tt>Returns&nbsp;true&nbsp;if&nbsp;fieldname&nbsp;is&nbsp;to&nbsp;be&nbsp;hidden&nbsp;for&nbsp;print.<br>
+&nbsp;<br>
+Print&nbsp;Hide&nbsp;can&nbsp;be&nbsp;set&nbsp;via&nbsp;the&nbsp;Print&nbsp;Format&nbsp;Builder&nbsp;or&nbsp;in&nbsp;the&nbsp;controller&nbsp;as&nbsp;a&nbsp;list<br>
+of&nbsp;hidden&nbsp;fields.&nbsp;Example<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;class&nbsp;MyDoc(<a href="frappe.model.document.html#Document">Document</a>):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;def&nbsp;__setup__(self):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.<strong>print_hide</strong>&nbsp;=&nbsp;["field1",&nbsp;"field2"]<br>
+&nbsp;<br>
+:param&nbsp;fieldname:&nbsp;Fieldname&nbsp;to&nbsp;be&nbsp;checked&nbsp;if&nbsp;hidden.</tt></dd></dl>
+
+<strong>meta</strong> = &lt;functools.cached_property object&gt;
+<strong>permitted_fieldnames</strong> = &lt;functools.cached_property object&gt;
+<dl><dt><a name="HandTBilling-precision"><strong>precision</strong></a>(self, fieldname, parentfield=None) -&gt; int | None</dt><dd><tt>Returns&nbsp;float&nbsp;precision&nbsp;for&nbsp;a&nbsp;particular&nbsp;field&nbsp;(or&nbsp;get&nbsp;global&nbsp;default).<br>
+&nbsp;<br>
+:param&nbsp;fieldname:&nbsp;Fieldname&nbsp;for&nbsp;which&nbsp;precision&nbsp;is&nbsp;required.<br>
+:param&nbsp;parentfield:&nbsp;If&nbsp;fieldname&nbsp;is&nbsp;in&nbsp;child&nbsp;table.</tt></dd></dl>
+
+<dl><dt><a name="HandTBilling-remove"><strong>remove</strong></a>(self, doc)</dt></dl>
+
+<dl><dt><a name="HandTBilling-remove_unpicklable_values"><strong>remove_unpicklable_values</strong></a>(self, state)</dt><dd><tt>Remove&nbsp;unpicklable&nbsp;values&nbsp;before&nbsp;pickling</tt></dd></dl>
+
+<dl><dt><a name="HandTBilling-reset_values_if_no_permlevel_access"><strong>reset_values_if_no_permlevel_access</strong></a>(self, has_access_to, high_permlevel_fields)</dt><dd><tt>If&nbsp;the&nbsp;user&nbsp;does&nbsp;not&nbsp;have&nbsp;permissions&nbsp;at&nbsp;permlevel&nbsp;&gt;&nbsp;0,&nbsp;then&nbsp;reset&nbsp;the&nbsp;values&nbsp;to&nbsp;original&nbsp;/&nbsp;default</tt></dd></dl>
+
+<dl><dt><a name="HandTBilling-set"><strong>set</strong></a>(self, key, value, as_value=False)</dt></dl>
+
+<dl><dt><a name="HandTBilling-set_fetch_from_value"><strong>set_fetch_from_value</strong></a>(self, doctype, df, values)</dt></dl>
+
+<dl><dt><a name="HandTBilling-show_unique_validation_message"><strong>show_unique_validation_message</strong></a>(self, e)</dt></dl>
+
+<dl><dt><a name="HandTBilling-throw_length_exceeded_error"><strong>throw_length_exceeded_error</strong></a>(self, df, max_length, value)</dt></dl>
+
+<dl><dt><a name="HandTBilling-update"><strong>update</strong></a>(self, d)</dt><dd><tt>Update&nbsp;multiple&nbsp;fields&nbsp;of&nbsp;a&nbsp;doctype&nbsp;using&nbsp;a&nbsp;dictionary&nbsp;of&nbsp;key-value&nbsp;pairs.<br>
+&nbsp;<br>
+Example:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;doc.<a href="#HandTBilling-update">update</a>({<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"user":&nbsp;"admin",<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"balance":&nbsp;42000<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;})</tt></dd></dl>
+
+<dl><dt><a name="HandTBilling-update_if_missing"><strong>update_if_missing</strong></a>(self, d)</dt><dd><tt>Set&nbsp;default&nbsp;values&nbsp;for&nbsp;fields&nbsp;without&nbsp;existing&nbsp;values</tt></dd></dl>
+
+<dl><dt><a name="HandTBilling-update_modified"><strong>update_modified</strong></a>(self)</dt><dd><tt>Update&nbsp;modified&nbsp;timestamp</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="frappe.model.base_document.html#BaseDocument">frappe.model.base_document.BaseDocument</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>docstatus</strong></dt>
+</dl>
+</td></tr></table></td></tr></table>
+</body></html>
